@@ -267,7 +267,7 @@ document.getElementById('exportButton').addEventListener('click', () => {
   
   // Draw each item
   placedItems.forEach(item => {
-    exportCtx.drawImage(item.img, item.x, item.y);
+    exportCtx.drawImage(item.img, item.x, item.y, exportCanvas.width, exportCanvas.height);
   });
 
   // Convert to data URL and open in new tab
